@@ -1,0 +1,2 @@
+# ChocoRecommender
+ChocoRecommender is a small 01/18/2022 #TidyTuesday project (done in Python). It uses the chocolate ratings dataset to allow you to find chocolates with descriptors similar to those of your ideal chocolate. This is implemented using TF-IDF vectors for each chocolate description. ChocoRecommender also allows you to filter your results based on chocolate characteristics. Try it out [here](https://share.streamlit.io/mgutmann/chocorecommender/main/choco_recommender.py).
