@@ -7,6 +7,8 @@ from nltk.corpus import stopwords
 import nltk
 nltk.download("stopwords")
 
+st.set_page_config(layout="wide")
+
 st.title("ChocoRecommender")
 st.write("""
     ChocoRecommender is a small 01/18/2022 #TidyTuesday project (done in Python). 
@@ -85,6 +87,6 @@ data = filter_data(data)
 
 try:
     result = make_embeddings_and_get_neighbours(data, query, stops)
-    st.write(result)
+    st.dataframe(result)
 except ValueError as error:
     st.write("Something went wrong. It is likely there are no chocolates that correspond to all your filters. Try relaxing some filters and trying again.")
