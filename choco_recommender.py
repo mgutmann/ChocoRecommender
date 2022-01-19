@@ -4,6 +4,8 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 from nltk.corpus import stopwords
+import nltk
+nltk.download("stopwords")
 
 st.title("ChocoRecommender")
 st.write("""
